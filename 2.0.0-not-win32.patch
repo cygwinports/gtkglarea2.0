@@ -1,0 +1,11 @@
+--- origsrc/gtkglarea-2.0.0/configure.ac	2008-08-24 14:14:59.000000000 -0500
++++ src/gtkglarea-2.0.0/configure.ac	2008-08-24 20:12:48.681349500 -0500
+@@ -38,7 +38,7 @@
+ dnl
+ AC_MSG_CHECKING([for Win32])
+ case "$host" in
+-  *mingw* | pw32* | *cygwin*)
++  *mingw* | pw32*)
+     native_win32=yes
+     ;;
+   *)
