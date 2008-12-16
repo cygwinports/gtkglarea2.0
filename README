@@ -1,0 +1,84 @@
+gtkglarea2.0
+------------------------------------------
+GtkGLArea is an OpenGL widget for GTK+ GUI toolkit.
+
+Just as GTK+ is build on top of GDK, GtkGLArea is built on top of gdkgl 
+which is basically wrapper around GLX functions. The widget itself is 
+derived from GtkDrawinigArea widget and adds only few extra functions.
+
+Lower level gdkgl functions make it easy to render on any widget that has 
+OpenGL capable visual, rendering to off-screen pixmaps is also supported.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libGL1-7.2-2
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
+  libX11_6-1.1.5-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gnome-common-2.24.0-1
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnome.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/gtkglarea/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gtkglarea2.0-2.0.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gtkglarea2.0-2.0.0-X.cygport all
+
+This will create:
+  /usr/src/gtkglarea2.0-2.0.0-X-src.tar.bz2
+  /usr/src/gtkglarea2.0-2.0.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+(libgtkgl2.0_1)
+  /usr/bin/cyggtkgl-2.0-1.dll
+  /usr/share/doc/gtkglarea2.0-2.0.0/AUTHORS
+  /usr/share/doc/gtkglarea2.0-2.0.0/COPYING
+  /usr/share/doc/gtkglarea2.0-2.0.0/ChangeLog
+  /usr/share/doc/gtkglarea2.0-2.0.0/HOWTO.txt
+  /usr/share/doc/gtkglarea2.0-2.0.0/INSTALL
+  /usr/share/doc/gtkglarea2.0-2.0.0/README
+  /usr/share/doc/gtkglarea2.0-2.0.0/TODO
+  /usr/share/doc/gtkglarea2.0-2.0.0/gdkgl.txt
+  /usr/share/doc/gtkglarea2.0-2.0.0/gtkglarea.txt
+
+(libgtkgl2.0-devel)
+  /usr/include/gtkgl-2.0/gtkgl/gdkgl.h
+  /usr/include/gtkgl-2.0/gtkgl/gtkglarea.h
+  /usr/lib/libgtkgl-2.0.dll.a
+  /usr/lib/libgtkgl-2.0.la
+  /usr/lib/pkgconfig/gtkgl-2.0.pc
+
+------------------
+
+Port Notes:
+
+----- version 2.0.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

@@ -4,11 +4,9 @@ inherit gnome2
 DESCRIPTION="GTK+ OpenGL widget"
 PATCH_URI="2.0.0-not-win32.patch"
 
-abi=1
-PKG_NAMES="${PN} libgtkgl2.0_${abi} libgtkgl2.0-devel"
-#PKG_HINTS="src lib devel"
-PKG_CONTENTS[0]=	# empty
-PKG_CONTENTS[1]="usr/bin/*-2.0-${abi}.dll usr/share/doc/"
-PKG_CONTENTS[2]="usr/include/ usr/lib/"
+PKG_NAMES="${PN} libgtkgl2.0_1 libgtkgl2.0-devel"
+libgtkgl2_0_1_CONTENTS="usr/bin/*-2.0-1.dll usr/share/doc/"
+libgtkgl2_0_devel_CONTENTS="usr/include/ usr/lib/"
 
 CYGCONF_ARGS="--with-lib-GL"
+DOCS="docs/*.txt"
