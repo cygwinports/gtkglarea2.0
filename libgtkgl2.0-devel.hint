@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgtkgl2.0_1 libGL-devel libglib2.0-devel libgtk2.0-devel libX11-devel
+requires: libgtkgl2.0_1 libGL-devel libglib2.0-devel libgtk2.0-devel libX11-devel
 external-source: gtkglarea2.0
 sdesc: "GTK+ OpenGL widget library (development)"
 ldesc: "GtkGLArea is an OpenGL widget for GTK+ GUI toolkit.
