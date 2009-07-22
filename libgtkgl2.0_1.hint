@@ -1,5 +1,5 @@
 category: Gnome
-requires: libGL1 libglib2.0_0 libgtk2.0_0 libX11_6
+requires: libgcc1 libGL1 libglib2.0_0 libgtk2.0_0 libX11_6
 external-source: gtkglarea2.0
 sdesc: "GTK+ OpenGL widget library (runtime)"
 ldesc: "GtkGLArea is an OpenGL widget for GTK+ GUI toolkit.

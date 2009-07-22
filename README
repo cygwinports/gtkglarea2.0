@@ -10,24 +10,25 @@ Lower level gdkgl functions make it easy to render on any widget that has
 OpenGL capable visual, rendering to off-screen pixmaps is also supported.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libGL1-7.2-2
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
-  libX11_6-1.1.5-1
+  cygwin-1.7.0-51
+  libgcc1-4.3.2-2
+  libGL1-7.4.4-1
+  libglib2.0_0-2.20.4-1
+  libgtk2.0_0-2.16.3-1
+  libX11_6-1.2.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-2
+  libtool-2.2.7a-14
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -39,15 +40,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkglarea2.0-2.0.0-X-src.tar.bz2
+  unpack gtkglarea2.0-2.0.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtkglarea2.0-2.0.0-X.cygport all
+  cygport ./gtkglarea2.0-2.0.1-X.cygport all
 
 This will create:
-  /usr/src/gtkglarea2.0-2.0.0-X-src.tar.bz2
-  /usr/src/gtkglarea2.0-2.0.0-X.tar.bz2
+  /usr/src/gtkglarea2.0-2.0.1-X-src.tar.bz2
+  /usr/src/libgtkgl2.0-devel-2.0.1-X.tar.bz2
+  /usr/src/libgtkgl2.0_1-2.0.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -55,15 +57,14 @@ Files included in the binary package:
 
 (libgtkgl2.0_1)
   /usr/bin/cyggtkgl-2.0-1.dll
-  /usr/share/doc/gtkglarea2.0-2.0.0/AUTHORS
-  /usr/share/doc/gtkglarea2.0-2.0.0/COPYING
-  /usr/share/doc/gtkglarea2.0-2.0.0/ChangeLog
-  /usr/share/doc/gtkglarea2.0-2.0.0/HOWTO.txt
-  /usr/share/doc/gtkglarea2.0-2.0.0/INSTALL
-  /usr/share/doc/gtkglarea2.0-2.0.0/README
-  /usr/share/doc/gtkglarea2.0-2.0.0/TODO
-  /usr/share/doc/gtkglarea2.0-2.0.0/gdkgl.txt
-  /usr/share/doc/gtkglarea2.0-2.0.0/gtkglarea.txt
+  /usr/share/doc/gtkglarea2.0/AUTHORS
+  /usr/share/doc/gtkglarea2.0/COPYING
+  /usr/share/doc/gtkglarea2.0/ChangeLog
+  /usr/share/doc/gtkglarea2.0/HOWTO.txt
+  /usr/share/doc/gtkglarea2.0/README
+  /usr/share/doc/gtkglarea2.0/TODO
+  /usr/share/doc/gtkglarea2.0/gdkgl.txt
+  /usr/share/doc/gtkglarea2.0/gtkglarea.txt
 
 (libgtkgl2.0-devel)
   /usr/include/gtkgl-2.0/gtkgl/gdkgl.h
@@ -76,8 +77,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.0.0-1 -----
-Initial release for Cygwin.
+----- version 2.0.1-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
