@@ -1,0 +1,23 @@
+ORIG_PN="gtkglarea"
+inherit gnome2
+
+NAME="gtkglarea2.0"
+VERSION=2.0.1
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="GTK+ OpenGL widget library"
+DESCRIPTION="GtkGLArea is an OpenGL widget for GTK+ GUI toolkit. Just as GTK+
+is build on top of GDK, GtkGLArea is built on top of gdkgl which is basically
+wrapper around GLX functions. The widget itself is derived from GtkDrawingArea
+widget and adds only few extra functions. Lower level gdkgl functions make it
+easy to render on any widget that has OpenGL capable visual, rendering to
+off-screen pixmaps is also supported."
+
+PATCH_URI="2.0.0-not-win32.patch"
+
+PKG_NAMES="libgtkgl2.0_1 libgtkgl2.0-devel"
+libgtkgl2_0_1_CONTENTS="usr/bin/*-2.0-1.dll usr/share/doc/"
+libgtkgl2_0_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--with-lib-GL"
+DOCS="docs/*.txt"
